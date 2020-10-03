@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the first website built from Udemy"
+    />
+    <style>
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: wheat;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style>
+    <title>🎉Udemy Website</title>
+  </head>
+  <body>
+    <!-- <img srcset="ANDROID-480w.png 480w,
+                     ANDROID-800w.png 800w"
+             sizes="(max-width: 600px) 480px,
+                    800px"
+             src="ANDROID-800w.png" alt="Elva dressed as a fairy"> -->
+
+    <img
+      src="ANDROID-800w.png"
+      alt="Android Picture"
+      srcset="ANDROID-480w.png 480w, ANDROID-800w.png 800w"
+      sizes="(max-width: 600px) 480px, 800px"
+    />
+
+    <picture>
+      <source media="(max-width:799px)" srcset="home-mobile.jpg" />
+      <source media="(min-width:800px)" srcset="home-portrait.jpg" />
+      <img src="home-portrait.jpg" alt="Home Sweet Home" />
+    </picture>
+
+    <table cellspacing="20px">
+      <tr>
+        <td><img src="profile-picture.png" height="200px" width="200px" /></td>
+        <td>
+          <h1>Angel's Personal Website</h1>
+          <p>
+            <em>Does nothing at <strong>Home</strong></em>
+          </p>
+          <p>I am Android and Full Stack developer!</p>
+          <a href="contact.html">Contact Me</a>
+        </td>
+      </tr>
+    </table>
+
+    <hr size="1px" noshade />
+    <h3>Skills</h3>
+    <ul>
+      <li type="circle">Android</li>
+      <ol>
+        <li>Melodious Alpha</li>
+        <li>Smart Kinder Garten</li>
+        <li>JLNE</li>
+      </ol>
+      <li>Full Stack</li>
+      <li>Python</li>
+      <li>PHP</li>
+      <li>JS</li>
+    </ul>
+
+    <h3>Proficiency</h3>
+    <table cellspacing="10px">
+      <caption>
+        Proficiency in Skills
+      </caption>
+      <tr>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <th scope="col">Skills</th>
+                <th scope="col">Proficiency</th>
+              </tr>
+              <tr>
+                <td>Android</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>⭐⭐</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <th scope="col">Skills</th>
+                <th scope="col">Proficiency</th>
+              </tr>
+              <tr>
+                <td>PHP</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>⭐</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table border="1px">
+      <caption>
+        This describes my location per year
+      </caption>
+      <thead>
+        <th scope="col">Mode</th>
+        <th scope="col">Session</th>
+        <th scope="col">Location</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Good</th>
+          <td>2001 - 2005</td>
+          <td>Village</td>
+        </tr>
+        <tr>
+          <th scope="row">Meh</th>
+          <td>2006 - 2020</td>
+          <td>Town</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
